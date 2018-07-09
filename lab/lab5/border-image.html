@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Border Image</title>
+		<style type="text/css">
+			p {
+				width: 1000px;
+				height: 220px;
+				border: 11px solid #ffffff;}
+			p.one {
+				font-size: 36pt;
+				-moz-border-image: url("456.png") 33 33 33 33 stretch;
+				-webkit-border-image: url("456.png") 33 33 33 33 stretch;
+				border-image: url("456.png") 33 33 33 33 stretch;
+                padding: 20px;
+			}
+
+			p.two {
+				font-size: 36pt;
+				-moz-border-image: url("456.png") 33 33 33 33 round;
+				-webkit-border-image: url("456.png") 33 33 33 33 round;
+				border-image: url("456.png") 33 33 33 33 round;
+				padding:20px;}
+		</style>
+	</head>
+	<body>
+		<p class="one"><font color="yellow">斯狗以<font></p>
+		<p class="two">私苟以</p>
+	</body>
+</html>
